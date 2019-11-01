@@ -13,6 +13,7 @@ class User {
     @field:SerializedName("last_name")
     var lastName: String? = null
 }
+
 class UserResponse {
     @field:SerializedName("data")
     var users: List<User>? = null

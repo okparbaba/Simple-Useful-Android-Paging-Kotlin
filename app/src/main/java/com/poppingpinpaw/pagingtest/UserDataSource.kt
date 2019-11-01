@@ -5,9 +5,7 @@ import androidx.paging.PageKeyedDataSource
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-/**
- * Created by Morris on 03,June,2019
- */
+
 class UserDataSource : PageKeyedDataSource<Int, User>() {
   override fun loadBefore(params: LoadParams<Int>, callback: LoadCallback<Int, User>) {
     val service = ApiServiceBuilder.buildService(ApiService::class.java)
